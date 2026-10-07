@@ -11,34 +11,77 @@
         nav>a {
             margin: 1%;
             text-decoration: none;
-            color: black;
-            border: 2px solid black;
+            color: rgb(255, 255, 255);
+            /* border: 2px solid black; */
+        }
 
-
+        a:hover {
+            color: blue;
         }
 
         nav {
             display: flex;
             justify-content: space-around;
             justify-content: right;
+            background-color: black;
+            padding: 1%;
         }
 
         .row {
             text-align: center;
+
         }
+
         /* footer>.container>.rowrow-cols-2>a{
             text-decoration: none;
             color: black;
         } */
-        a{
+        a {
             text-decoration: none;
             color: black;
         }
-        .addmision-form{
+
+        .addmision-form {
             text-align: center;
         }
-        .paragraph{
+
+        .paragraph {
             text-align: justify;
+            padding: 1%;
+            color: aliceblue;
+        }
+
+        #samosa-img {
+            padding: 2%;
+        }
+
+        #samosa {
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20251118/pngtree-crispy-samosas-on-plate-image_20244674.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h3 {
+            color: aliceblue;
+        }
+        .row-2{
+            background-color: wheat
+        }
+        audio{
+            margin-top: 25%;
+            background-color: black;
+            padding: 2%;
+        }
+        form{
+            border: 2px solid black;
+            height: 70%;
+            width: 50%;
+            text-align: center;
+            text-align: justify;
+            box-shadow: 2px 3px 4px 3px red;
+        }
+        .addmision-form>button{
+            margin-left: 40%;
         }
     </style>
 </head>
@@ -50,72 +93,83 @@
             <a href="https://en.wikipedia.org/wiki/Samosa">Blog</a>
             <a href="https://en.wikipedia.org/wiki/Samosa">Youtube</a>
             <a href="https://en.wikipedia.org/wiki/Samosa">Contact</a>
-            <button type="button">Sumbit</button>
+            <button type="button" class="btn btn-primary">Submit</button>
         </nav>
     </header>
-    <main class="container">
-        <div class="row">
+    <main>
+        <div class="row" id="samosa">
             <div class="col-md-6">
                 <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/samosa-recipe.jpg"
-                    style="height: 50%; width: 50%;" alt="">
+                    style="height: 50%; width: 50%;" id="samosa-img" alt="">
                 <h3>Samosa</h3>
             </div>
             <div class="col-md-6 paragraph">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iure assumenda omnis quaerat
                     non odit ratione enim ducimus voluptatibus nobis veniam commodi tenetur dolore iste quae harum
-                    velit fugiat deleniti!</p>
+                    velit fugiat deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea et
+                    alias odit natus quaerat. Ducimus dolorum explicabo labore ad! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quam, labore quibusdam? Similique velit perspiciatis ducimus et,
+                    dolorum aliquid dignissimos laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique laudantium maxime necessitatibus tenetur, explicabo repellat a quisquam cum facilis.
+                    Tenetur, suscipit quos temporibus dolores ut nihil rerum laborum est explicabo inventore veniam.
+                    Doloremque, odio error assumenda fuga sint architecto iure, nemo magni pariatur delectus, labore
+                    inventore odit suscipit nesciunt sapiente!</p>
             </div>
-        </div>
         </div>
 
         <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWJZ3lFoua4wF2JbAeRe6WEBC6gyZvdwBifd26HjQtw&s=10"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jalebi</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="https://en.wikipedia.org/wiki/Samosa" target="_blank" class="btn btn-dark">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWJZ3lFoua4wF2JbAeRe6WEBC6gyZvdwBifd26HjQtw&s=10"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Jalebi</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="https://en.wikipedia.org/wiki/Samosa" target="_blank" class="btn btn-dark">Go
-                            somewhere</a>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWJZ3lFoua4wF2JbAeRe6WEBC6gyZvdwBifd26HjQtw&s=10"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jalebi</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="https://en.wikipedia.org/wiki/Samosa" target="_blank" class="btn btn-dark">Go
+                                somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWJZ3lFoua4wF2JbAeRe6WEBC6gyZvdwBifd26HjQtw&s=10"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jalebi</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+
+                            <a href="https://en.wikipedia.org/wiki/Samosa" target="_blank" class="btn btn-dark">Go
+                                somewhere</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWJZ3lFoua4wF2JbAeRe6WEBC6gyZvdwBifd26HjQtw&s=10"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Jalebi</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="https://en.wikipedia.org/wiki/Samosa" target="_blank" class="btn btn-dark">Go somewhere</a>
-                </div>
-            </div>
         </div>
-
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWJZ3lFoua4wF2JbAeRe6WEBC6gyZvdwBifd26HjQtw&s=10"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Jalebi</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-
-                    <a href="https://en.wikipedia.org/wiki/Samosa" target="_blank" class="btn btn-dark">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        </div>
-        
-        <br>
-
-        <div class="row">
+        <div class="row row-2" >
             <div class="col-md-4">
                 <iframe width="400" height="315" src="https://www.youtube.com/embed/UnbMY4pkNmo?si=Vw7H0ILdNzb__3v0"
                     title="YouTube video player" frameborder="0"
@@ -124,47 +178,85 @@
             </div>
 
             <div class="col-md-4">
-                    <video src="/126213-735676466_medium.mp4" controls style="height: 200px; width: 200px;"></video>
-             </div>
-             <div class="col-md-4">
+                <video src="/126213-735676466_medium.mp4" controls style="height: 100%; width: 100%;"></video>
+            </div>
+            <div class="col-md-4">
                 <audio src="/freesound_community-54321-35890 (1).mp3" controls></audio>
-             </div>
+            </div>
         </div>
-        
+
         <br>
-<!--             
+
         <div class="addmision-form">
             <h1>collage addmision form</h1>
         </div>
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
-        </div> -->
+        <div class="addmision-form">
+        <form action="" class="container">
+            <label for="Name">Full name of applicant</label>
+            <br>
+            <input type="Name" placeholder="First">
+            <!-- <label for="Name">Enter your middle name</label> -->
+            <input type="Name" placeholder="Middle">
+            <!-- <label for="Name">Enter your Last name</label> -->
+            <input type="Name" placeholder="Last">
+            <br>
+           <label for="gender">choose your gender</label>
+           <br>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">female</label>
+            <br>
+            <label for="email">Applicant email</label>
+            <br>
+            <input type="email">
+            <br>
+            <label for="date">Date of Birth</label>
+            <br>
+            <input type="date" placeholder="MM/DD/YYYY">
+            <br>
+            <!-- <label for="number">Applicant Phone Number</label>
+            <br>
+            <input type="number"> -->
+            <label for="Name">Applicant Phone Number</label>
+            <br>
+            <input type="name">
+            <br>
+            <label for="text">Parmanent address</label>
+            <br>
+            <input type="text" placeholder="Street address">
+            <br>
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Zip code">
+            <br>
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Country">
+            <br>
+            <button type="button" class="btn btn-dark" id="sumbit">Submit</button>
+        </form>
+        </div>
+       
 
         <br>
 
         <footer>
             <div class="container">
-                <div class="row row-cols-2" >
+                <div class="row row-cols-2">
                     <a href="https://www.youtube.com/">
-                         <div class="col">YouTube</div>
+                        <div class="col">YouTube</div>
                     </a>
-                   <a href="https://www.google.com/">
-                         <div class="col">Google</div>
+                    <a href="https://www.google.com/">
+                        <div class="col">Google</div>
                     </a>
                     <a href="https://www.youtube.com/">
-                         <div class="col">Instagram</div>
+                        <div class="col">Instagram</div>
                     </a><a href="https://www.youtube.com/">
-                         <div class="col">Mircrosoft</div>
+                        <div class="col">Mircrosoft</div>
                     </a>
                     <a href="https://www.youtube.com/">
-                         <div class="col">Telegram</div>
+                        <div class="col">Telegram</div>
                     </a><a href="https://www.youtube.com/">
-                         <div class="col">linkdin</div>
+                        <div class="col">linkdin</div>
                     </a>
                 </div>
             </div>
